@@ -2,10 +2,6 @@
 
 Just a bunch of docs I find useful to have at hand.
 
-## List
-
-- [Download Chrome Extension from GitHub](https://raw.githubusercontent.com/LalbaAnthony/antho-docs/main/chrome/download-extension-from-github/index.pdf)
-
 ## Contributing
 
 - `.pdf` files are generated from `.md` files using https://apitemplate.io/pdf-tools/convert-markdown-to-pdf/.
