@@ -1,7 +1,6 @@
 # Checklist Upgrade PHP
 
 Ce fichier à pour but d'être une procedure linéaire à suivre pour un projet type.
-Moins difficile à lire que [Documentation pour upgrade PHP](documentation_upgrade_php.md) qui est assez lourde.
 Hésitez pas à la dupliquer pour chaque projet et à l'adapter à votre besoin, ou a l'enrichir sur ce repo.
 
 ## Prérequis
@@ -26,8 +25,8 @@ Si l'upgrade PHP implique un changement de serveur:
 - [ ] Activer les `short_open_tag` dans le `php.ini` si besoin, ou modifier le code pour utiliser `<?php` au lieu de `<?`
 - [ ] Placer dans le fichier `config/config.inc.php` le code PHP permettant d'afficher les erreurs: `ini_set('display_errors', 1); // ...`
 - [ ] Récupérer la version actuelle du projet depuis le serveur et la mettre sur le git
-- [ ] Pour gagner du temps, vous pouvez vous rendre dans la section [Les erreurs courantes](documentation_upgrade_php.md#les-erreurs-courantes) de [Documentation pour upgrade PHP](documentation_upgrade_php.md)
-- [ ] Vous pouvez aussi installer [Rector](https://getrector.com/) avec [Cheat Sheet Rector](cheat-sheet_rector.md)
+- [ ] Pour gagner du temps, vous pouvez vous rendre dans la section `Les erreurs courantes`
+- [ ] Vous pouvez aussi installer [Rector](https://getrector.com/)
 - [ ] Tester et débuger le FRONT
 - [ ] Tester et débuger le BO
 - [ ] Tester AVGC:

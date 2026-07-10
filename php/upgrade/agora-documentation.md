@@ -167,7 +167,7 @@ FLUSH PRIVILEGES;
 
 ### Outils
 
-Vous pouvez installer [Rector](https://getrector.com/) avec [Cheat Sheet Rector](cheat-sheet_rector.md) pour automatiser une partie de la migration du code PHP, notamment pour les évolutions de syntaxe et les suppressions de code mort.
+Vous pouvez installer [Rector](https://getrector.com/) pour automatiser une partie de la migration du code PHP, notamment pour les évolutions de syntaxe et les suppressions de code mort.
 Cela ne remplacera **JAMAIS** une revue de code manuelle, mais ça peut faire gagner du temps.
 
 ### Afficher les erreurs PHP
