@@ -22,7 +22,7 @@ This guide walks you through downloading and installing a Chrome extension from 
 
    > Keep this folder where it is - Chrome will need it every time it loads the extension.
 
-   <img src="https://raw.githubusercontent.com/LalbaAnthony/antho-docs/main/chrome/download-extension-from-github/assets/download-screenshot.png" alt="GitHub Download ZIP" width="400"/>
+   <img src="https://raw.githubusercontent.com/LalbaAnthony/docs-all/main/chrome/download-extension-from-github/assets/download-screenshot.png" alt="GitHub Download ZIP" width="400"/>
 
 ## Step 2 - Enable Developer Mode in Chrome
 
