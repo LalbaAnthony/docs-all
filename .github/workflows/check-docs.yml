@@ -1,0 +1,44 @@
+name: Check docs
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Unit tests
+        run: node --test "scripts/*.test.mjs"
+
+      - name: Resolve diff base
+        id: base
+        env:
+          EVENT: ${{ github.event_name }}
+          PR_BASE: ${{ github.event.pull_request.base.sha }}
+          PUSH_BEFORE: ${{ github.event.before }}
+        run: |
+          if [ "$EVENT" = "pull_request" ]; then
+            echo "ref=$PR_BASE" >> "$GITHUB_OUTPUT"
+          elif [ -n "$PUSH_BEFORE" ] && ! echo "$PUSH_BEFORE" | grep -qE '^0+$'; then
+            echo "ref=$PUSH_BEFORE" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Check docs
+        env:
+          BASE: ${{ steps.base.outputs.ref }}
+        run: |
+          if [ -n "$BASE" ]; then
+            node scripts/check-docs.mjs --base "$BASE"
+          else
+            node scripts/check-docs.mjs --no-git
+          fi
