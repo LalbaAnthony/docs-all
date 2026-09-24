@@ -229,4 +229,3 @@ Install lynis:
 apt install lynis -y
 lynis audit system
 ```
-

@@ -144,4 +144,4 @@ pm2 save && pm2 startup
 - [ ] Uptime monitor active
 - [ ] Backup restore tested successfully
 - [ ] Resource limits configured
-- [ ] No open debug ports  
+- [ ] No open debug ports
