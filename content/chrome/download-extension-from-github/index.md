@@ -64,3 +64,4 @@ This is normal for unpacked extensions if the folder was moved or deleted. Make 
 
 **Chrome says the extension is unsafe**
 This warning is standard for extensions not installed from the Web Store. If you trust the source (e.g., your company or a known developer), click **"Keep"** to proceed.
+
