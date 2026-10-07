@@ -10,4 +10,3 @@
 
 - `node scripts/check-docs.mjs` validates the rules above (also runs in CI on push/PR).
 - `node --test "scripts/*.test.mjs"` runs the checker's unit tests.
-- Optional pre-commit hook: `git config core.hooksPath .githooks`.
